@@ -26,6 +26,14 @@
   --z-fixed: 100;
 }
 
+@font-face {
+  font-family: 'linoleo_scriptregular';
+  src: url('../fonts/webfontkit/linoleo_script-webfont.woff2') format('woff2'),
+    url('../fonts/webfontkit/linoleo_script-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -113,6 +121,8 @@ html {
 .nav__logo {
   color: var(--title-color);
   font-weight: 600;
+  font-family: 'linoleo_scriptregular';
+  font-size: 45px;
 }
 
 /*=============== SOCIAL MEDIA ===============*/
