@@ -4,11 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=============== FAVICON ===============-->
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
     />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <!--=============== BOXICONS ===============-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <title>Maisa Maximo - Portifolio</title>
   </head>
   <body>
@@ -62,28 +75,257 @@
           <a href="#">Download CV</a>
         </div>
         <div class="area-image">
-          <img src="./assets/img/perfil.png" alt="" />
+          <!-- <img src="./assets/img/perfil.png" alt="" /> -->
         </div>
       </section>
 
       <!--=============== ABOUT ===============-->
       <section class="container section section__height" id="about">
-        <h2 class="section__title">About</h2>
+        <span class="section__subtitle">My Intro</span>
+        <h2 class="section__title">About Me</h2>
       </section>
 
       <!--=============== SKILLS ===============-->
-      <section class="container section section__height" id="experience">
-        <h2 class="section__title">Skills</h2>
-      </section>
+      <section class="skills section" id="skills">
+        <span class="section__subtitle">My abilities</span>
+        <h2 class="section__title">My Experience</h2>
+
+        <div class="skills__container container grid">
+            <div class="skills__content">
+                <h3 class="skills__title">Frontend Developer</h3>
+
+                <div class="skills__box">
+                    <div class="skills__group">
+                        <div class="skills__data">
+                            <i class='bx bxs-check-shield'></i>
+
+                            <div>
+                                <h3 class="skills__name">HTML</h3>
+                                <span class="skills__level">Intermediate</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <i class='bx bxs-check-shield'></i>
+
+                            <div>
+                                <h3 class="skills__name">CSS</h3>
+                                <span class="skills__level">Advanced</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <i class='bx bxs-check-shield'></i>
+
+                            <div>
+                                <h3 class="skills__name">JavaScript</h3>
+                                <span class="skills__level">Basic</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__group">
+                        <div class="skills__data">
+                            <i class='bx bxs-check-shield'></i>
+
+                            <div>
+                                <h3 class="skills__name">Bootstrap</h3>
+                                <span class="skills__level">Intermediate</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <i class='bx bxs-check-shield'></i>
+
+                            <div>
+                                <h3 class="skills__name">Angular</h3>
+                                <span class="skills__level">Advanced</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <i class='bx bxs-check-shield'></i>
+
+                            <div>
+                                <h3 class="skills__name">ReactJS</h3>
+                                <span class="skills__level">Basic</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills__content">
+                <h3 class="skills__title">Backend Developer</h3>
+
+                <div class="skills__box">
+                    <div class="skills__group">
+                        <div class="skills__data">
+                            <i class='bx bxs-check-shield'></i>
+
+                            <div>
+                                <h3 class="skills__name">HTML</h3>
+                                <span class="skills__level">Intermediate</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <i class='bx bxs-check-shield'></i>
+
+                            <div>
+                                <h3 class="skills__name">CSS</h3>
+                                <span class="skills__level">Advanced</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <i class='bx bxs-check-shield'></i>
+
+                            <div>
+                                <h3 class="skills__name">JavaScript</h3>
+                                <span class="skills__level">Basic</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__group">
+                        <div class="skills__data">
+                            <i class='bx bxs-check-shield'></i>
+
+                            <div>
+                                <h3 class="skills__name">Bootstrap</h3>
+                                <span class="skills__level">Intermediate</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <i class='bx bxs-check-shield'></i>
+
+                            <div>
+                                <h3 class="skills__name">Angular</h3>
+                                <span class="skills__level">Advanced</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <i class='bx bxs-check-shield'></i>
+
+                            <div>
+                                <h3 class="skills__name">ReactJS</h3>
+                                <span class="skills__level">Basic</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
       <!--=============== PORTFOLIO ===============-->
-      <section class="container section section__height" id="projects">
-        <h2 class="section__title">Portfolio</h2>
+      <section class="work section" id="work">
+        <span class="section__subtitle">My Portfolio</span>
+        <h2 class="section__title">Projects</h2>
+
+        <div class="work__filters">
+          <span class="work__item active-work" data-filter="all">All</span>
+          <span class="work__item" data-filter=".web">Web</span>
+          <span class="work__item" data-filter=".mobile">Mobile</span>
+          <span class="work__item" data-filter=".design">Design</span>
+        </div>
+
+        <div class="work__container container grid">
+          <div class="work__card mix web">
+            <img src="assets/img/work1.jpg" alt="" class="work__img" />
+            <h3 class="work__title">Angular</h3>
+            <a href="#" class="work__button">
+              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+          <div class="work__card mix web">
+            <img src="assets/img/work2.jpg" alt="" class="work__img" />
+            <h3 class="work__title">ReacrJS</h3>
+            <a href="#" class="work__button">
+              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+          <div class="work__card mix web">
+            <img src="assets/img/work3.jpg" alt="" class="work__img" />
+            <h3 class="work__title">VueJS</h3>
+            <a href="#" class="work__button">
+              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+          <div class="work__card mix design">
+            <img src="assets/img/work4.jpg" alt="" class="work__img" />
+            <h3 class="work__title">UI/UX</h3>
+            <a href="#" class="work__button">
+              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+          <div class="work__card mix mobile">
+            <img src="assets/img/work5.jpg" alt="" class="work__img" />
+            <h3 class="work__title">iOS</h3>
+            <a href="#" class="work__button">
+              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+          <div class="work__card mix mobile">
+            <img src="assets/img/work5.jpg" alt="" class="work__img" />
+            <h3 class="work__title">Android</h3>
+            <a href="#" class="work__button">
+              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+          <div class="work__card mix design">
+            <img src="assets/img/work4.jpg" alt="" class="work__img" />
+            <h3 class="work__title">UI/UX</h3>
+            <a href="#" class="work__button">
+              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+          <div class="work__card mix mobile">
+            <img src="assets/img/work5.jpg" alt="" class="work__img" />
+            <h3 class="work__title">iOS</h3>
+            <a href="#" class="work__button">
+              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+          <div class="work__card mix mobile">
+            <img src="assets/img/work5.jpg" alt="" class="work__img" />
+            <h3 class="work__title">Android</h3>
+            <a href="#" class="work__button">
+              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+        </div>
       </section>
 
       <!--=============== CONTACTME ===============-->
       <section class="container section section__height" id="contact">
-        <h2 class="section__title">Contactme</h2>
+        <span class="section__subtitle">Get in touch</span>
+        <h2 class="section__title">Let's talk</h2>
+
+        <div class="contact_container">
+          <a href="#" class="contact-email contact-box">
+            <div style="display: inline-block">
+              <span class="">EMAIL</span>
+              <p>ferreira.maximo.maisa@gmail.com</p>
+            </div>
+            <div style="float: right">
+              <i class="bx bx-chevron-right"></i>
+            </div>
+          </a>
+
+          <a href="#" class="contact-whatsapp contact-box">
+            <div style="display: inline-block">
+              <span class="">WHATSAPP</span>
+              <p>(+351) 914 146 005</p>
+            </div>
+            <div style="float: right">
+              <i class="bx bx-chevron-right"></i>
+            </div>
+          </a>
+        </div>
       </section>
     </main>
 
@@ -139,7 +381,17 @@
       </div>
     </footer>
 
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
     <script src="https //kit.fontawesome.com/a076d05399.js"></script>
-    <script src="./assets/js/main.js"></script>
   </body>
 </html>
