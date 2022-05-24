@@ -438,12 +438,6 @@ html {
   transition: 0.4s;
 }
 
-/* Active item work*/
-.active-work {
-  background-color: var(--first-color);
-  color: var(--body-color);
-}
-
 @media screen and (max-width: 992px) {
   .nav {
     padding: 30px;
@@ -662,14 +656,14 @@ html {
     border-radius: 50%;
   }
 
-  .work__container {
-    grid-template-columns: repeat(2, max-content);
-  }
-
   /* Minimalist design */
   /* .active-link::before{
       bottom: -.75rem;
   } */
+
+  .work__container {
+    grid-template-columns: repeat(2, max-content);
+  }
 }
 
 /* For large devices */

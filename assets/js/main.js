@@ -21,7 +21,6 @@ function scrollActive() {
   })
 }
 window.addEventListener('scroll', scrollActive)
-
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 function scrollHeader() {
   const header = document.getElementById('header')
