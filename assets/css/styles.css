@@ -340,19 +340,15 @@ html {
   padding: 2.5rem 0;
 }
 
-#contact {
-  height: 30vh;
-}
-
 #about {
   background: #fcf8f8;
 }
 
 .contact_container {
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
-  gap: 100px;
+  gap: 35px;
 }
 
 .contact-box {
@@ -415,6 +411,7 @@ html {
 
 .work__img {
   margin-bottom: 0.75rem;
+  width: 295px;
 }
 
 .work__title {
@@ -465,6 +462,11 @@ html {
     width: 40px;
     height: 40px;
   }
+
+  .contact_container {
+    display: grid;
+    gap: 35px;
+  }
 }
 
 /* For large devices */
@@ -473,10 +475,20 @@ html {
     margin-left: auto;
     margin-right: auto;
   }
+  .work__container {
+    gap: 3rem;
+  }
 
-  .skills__container {
-    grid-template-columns: repeat(2, 350px);
-    column-gap: 3rem;
+  .work__card {
+    padding: 1.25rem;
+  }
+
+  .work__img {
+    margin-bottom: 1rem;
+  }
+
+  .work__title {
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -494,6 +506,21 @@ html {
     align-content: center;
     border-radius: 1.25rem 1.25rem 0 0;
     transition: 0.4s;
+  }
+
+  .contact-box {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .contact-email p {
+    font-size: 1rem;
+  }
+
+  .work__container {
+    justify-content: center;
+    grid-template-columns: repeat(1, max-content);
   }
 }
 
@@ -579,6 +606,7 @@ html {
 
   .work__container {
     justify-content: center;
+    grid-template-columns: repeat(1, max-content);
   }
 
   .work__img {
@@ -598,13 +626,13 @@ html {
   body {
     margin: 0;
   }
+
   .section {
     padding: 7rem 0 2rem;
     /* height: 50vh; */
   }
   .section#contact {
     padding: 4rem 0 2rem;
-    height: 50vh;
   }
   .nav {
     height: calc(var(--header-height) + 1.5rem); /* 4.5rem */
@@ -635,7 +663,7 @@ html {
   }
 
   .work__container {
-    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(2, max-content);
   }
 
   /* Minimalist design */
@@ -653,17 +681,23 @@ html {
 
   .work__container {
     gap: 3rem;
+    grid-template-columns: repeat(3, max-content);
   }
 
   .work__card {
     padding: 1.25rem;
   }
 
-  .work__img {
-    margin-bottom: 1rem;
-  }
-
   .work__title {
     margin-bottom: 0.5rem;
+  }
+
+  .skills__container {
+    grid-template-columns: repeat(2, 350px);
+    column-gap: 3rem;
+  }
+
+  .contact_container {
+    display: flex;
   }
 }
