@@ -419,7 +419,7 @@ html {
 }
 
 .footer__container {
-  padding: 2.5rem 0;
+  padding: 4rem 0;
 }
 
 #about {
@@ -461,6 +461,45 @@ html {
   font-weight: 300;
   color: #2e2e2e;
   padding-top: 5px;
+}
+/*=============== BANNER ===============*/
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content .textBox {
+  position: relative;
+  max-width: 600px;
+}
+
+.content .textBox a {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.maisa {
+  background: #ffe8e8;
+  padding: 0 10px;
+}
+
+.content .imgBox {
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
+  padding-right: 50px;
+}
+
+.content .imgBox img {
+  max-width: 340px;
+}
+
+.content .imgBox {
+  display: none;
 }
 
 /*=============== WORK ===============*/
@@ -574,6 +613,11 @@ html {
     column-gap: 4rem;
   }
 
+  #home {
+    height: 100%;
+    padding-top: 100px;
+  }
+
   .about__img {
     width: 400px;
   }
@@ -594,6 +638,51 @@ html {
   .about__description {
     padding: 0 4rem 0 0 !important;
     margin-bottom: 2.5rem;
+  }
+
+  /*=============== BANNER ===============*/
+  .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 20px;
+  }
+
+  .content .textBox {
+    position: relative;
+    max-width: 600px;
+  }
+
+  .content .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  .content .imgBox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+    padding-right: 50px;
+  }
+
+  .content .imgBox img {
+    max-width: 450px;
+  }
+
+  #home::after {
+    content: '';
+    width: 750px;
+    height: 550px;
+    background: #f6f6f6;
+    display: block;
+    margin-bottom: 8px;
+    position: absolute;
+    top: 20px;
+    z-index: -1;
+    left: 350px;
   }
 }
 
@@ -711,6 +800,10 @@ html {
   .nav__list {
     justify-content: center;
     column-gap: 3rem;
+  }
+
+  .content .imgBox {
+    display: contents;
   }
 
   .work__container {
