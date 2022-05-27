@@ -912,4 +912,8 @@ html {
   .contact_container {
     display: flex;
   }
+  
+    .contact-box p {
+    font-size: 18px;
+  }
 }
