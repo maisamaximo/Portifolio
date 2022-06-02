@@ -13,7 +13,7 @@
   --body-color: hsl(var(--hue), 100%, 99%);
   --container-color: #fff;
 
-  --title-color: #999999;
+  --title-color: #7e7c7c;
 
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
@@ -33,7 +33,7 @@
   --h3-font-size: 1rem;
   --normal-font-size: 0.938rem;
   --small-font-size: 0.813rem;
-  --smaller-font-size: 0.75rem;
+  --smaller-font-size: 1rem;
   --tiny-font-size: 0.625rem;
   /*========== Font weight ==========*/
   --font-medium: 500;
@@ -266,8 +266,20 @@ html {
   font-size: var(--tiny-font-size);
 }
 
+.about__data h3 {
+  margin-bottom: 1rem;
+}
+
 .about__description {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 100;
+  text-align: justify;
+  letter-spacing: 0.3px;
+}
+
+.about__description span {
+  font-weight: 400;
+  background: #ffe8e8;
 }
 
 /*=============== SKILLS ===============*/
@@ -562,23 +574,9 @@ font-family: 'Fira Sans', sans-serif; */
   margin-bottom: 30px;
   line-height: 1.5em;
 }
-.content-blog button {
-  display: inline-flex;
-  padding: 15px 20px;
-  border: none;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: #fff0e6;
-  font-weight: 600;
-  letter-spacing: 1px;
-  border-radius: 50px;
-  cursor: pointer;
-  outline: none;
-  border: 1px solid #d3d3d3;
-  background: linear-gradient(147deg, #dea2a2 0%, #ef6496 74%);
-}
-.content-blog button:hover {
-  background: linear-gradient(147deg, #dea2a2 0%, #ef6496 74%);
+.content-blog .button {
+  padding: 0.8rem;
+  font-size: 12px;
 }
 
 .sliders {
@@ -786,7 +784,7 @@ input[type='checkbox'] {
   }
 
   .about__img {
-    width: 400px;
+    width: 100%;
   }
 
   .about__data {
@@ -804,7 +802,7 @@ input[type='checkbox'] {
 
   .about__description {
     padding: 0 4rem 0 0 !important;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
   }
 
   /*=============== BANNER ===============*/
@@ -979,6 +977,12 @@ input[type='checkbox'] {
 
   .work__img {
     width: 295px;
+    transition: 0.5s;
+  }
+
+  .work__img:hover {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
   }
 
   .skills__container {
@@ -986,7 +990,7 @@ input[type='checkbox'] {
   }
 
   .skills__content {
-    padding: 2rem 4rem;
+    padding: 2rem 3rem;
   }
 
   .about__info {
@@ -1008,6 +1012,11 @@ input[type='checkbox'] {
     padding: 4rem 0;
     /* height: 50vh; */
   }
+
+  .section .section__subtitle {
+    margin-top: 2rem;
+  }
+
   .section#contact {
     padding: 4rem 0;
   }
@@ -1070,7 +1079,7 @@ input[type='checkbox'] {
   }
 
   .skills__container {
-    grid-template-columns: repeat(2, 350px);
+    grid-template-columns: repeat(2, 400px);
     column-gap: 3rem;
   }
 
@@ -1159,7 +1168,7 @@ input[type='checkbox'] {
     display: block;
     color: #7b7992;
     margin-bottom: 15px;
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 500;
   }
   .content-blog .title {
