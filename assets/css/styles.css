@@ -167,7 +167,7 @@ html {
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
-  background-color: #ffe8e8;
+  background-color: #4b517f;
   color: #6d6d6d;
   padding: 1.5rem 4rem;
   font-weight: var(--font-medium);
@@ -279,7 +279,7 @@ html {
 
 .about__description span {
   font-weight: 400;
-  background: #ffe8e8;
+  background: #4b517f;
 }
 
 /*=============== SKILLS ===============*/
@@ -447,7 +447,7 @@ html {
 
 .contact-box {
   width: 550px;
-  background: #ffe8e8;
+  background: #4b517f;
   height: 150px;
   padding: 46px;
   color: #6d6d6d;
@@ -647,7 +647,7 @@ input[type='checkbox'] {
 }
 
 .maisa {
-  background: #ffe8e8;
+  background: #4b517f;
   padding: 0 10px;
 }
 
