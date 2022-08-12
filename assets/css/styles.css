@@ -411,8 +411,8 @@ html {
 .wrapper .social-media:hover,
 .wrapper .social-media:hover .tooltip,
 .wrapper .social-media:hover .tooltip::before {
-  background: #ecc9c9;
-  color: #6d6d6d;
+  background: #4b517f;
+  color: #FFFFFF;
 }
 
 /*=============== FOOTER ===============*/
