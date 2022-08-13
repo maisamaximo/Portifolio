@@ -152,7 +152,7 @@ html {
   /* identical to box height */
 
   margin-bottom: 10px;
-  color: #999999;
+  color: #444;
 }
 
 .home-subtitle {
@@ -649,6 +649,7 @@ input[type='checkbox'] {
 .maisa {
   background: #4b517f;
   padding: 0 10px;
+  color: #fff;
 }
 
 .content .imgBox {
