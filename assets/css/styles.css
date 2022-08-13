@@ -168,7 +168,7 @@ html {
 .button {
   display: inline-block;
   background-color: #4b517f;
-  color: #6d6d6d;
+  color: #fff;
   padding: 1.5rem 4rem;
   font-weight: var(--font-medium);
   transition: 0.4s;
@@ -458,9 +458,8 @@ html {
   text-transform: uppercase;
   display: block;
   font-size: var(--smaller-font-size);
-  color: var(--text-color-light);
   letter-spacing: 2.33px;
-  color: #7e7c7c;
+  color: #fff;
   opacity: 0.6;
 }
 
